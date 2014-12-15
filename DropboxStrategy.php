@@ -22,7 +22,8 @@ class DropboxStrategy extends OpauthStrategy{
    * eg. array('scope' => 'email');
    */
   public $defaults = array(
-    'redirect_uri' => '{complete_url_to_strategy}int_callback'
+    'redirect_uri' => '{complete_url_to_strategy}int_callback',
+    'response_type' => 'code'
   );
 
   /**
@@ -75,8 +76,6 @@ class DropboxStrategy extends OpauthStrategy{
           'raw' => $me
         );
 
-        var_dump($this->auth);exit;
-        
         $this->callback();
       }
       else{
