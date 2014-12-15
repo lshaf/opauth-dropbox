@@ -1,5 +1,5 @@
 {
-	"name": "lshaf/opauthdopbox",
+	"name": "opauth/dropbox",
 	"description": "Dropbox strategy for Opauth",
 	"keywords": ["authentication","auth","dropbox"],
 	"homepage": "http://opauth.org",
